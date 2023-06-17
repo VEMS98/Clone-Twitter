@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+  <head>
+    <!-- caracteres padrão -->
+    <meta charset="UTF-8" />
+    <!-- responsividade padrão -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- título do site -->
+    <title>Twitter Clone versão</title>
+    <!-- conexão da folha de estilos -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- conexão da biblioteca de ícones padrão -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- biblioteca específica para obter ícones do twitter -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+
+      <div class="sidebarOption active">
+        <span class="material-icons">home</span>
+        <h2>Home</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons">search</span>
+        <h2>Explorar</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons">notifications_none</span>
+        <h2>Notificações</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons">mail_outline</span>
+        <h2>Home</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons">home</span>
+        <h2>Mensagens</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons">bookmark_border</span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons">list_alt</span>
+        <h2>Listas</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons">perm_identity</span>
+        <h2>Perfil</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons">more_horiz</span>
+        <h2>Home</h2>
+      </div>
+
+<button class="sidebar__tweet">Tweet</button>
+    </div>
+
+
+<div class="feed">
+  <div class="feed__header">
+    <h2>Home</h2>
+  </div>
+
+  <div class="tweetBox">
+    <form>
+      <div class="tweetbox__input">
+        <img src="imagens/profile.png" alt="">
+        <input type="text" placeholder="O que está acontecendo"/>
+      </div>
+      <button class="tweetBox__tweetButton">Tweet</button>
+    </form>
+  </div>
+
+  <div class="post">
+    <div class="post__avatar">
+      <img src="imagens/profile.png" alt="">
+    </div>
+    <div class="post__body">
+      <div class="post__header">
+        <div class="post__headerText">
+          <h3>Codi Academy<span class="post__headerSpecial"><span class="material-icons post__badge">verified</span>@codiacademy</span></h3>
+        </div>
+
+        <div class="post__headerDescription">
+          <p>Critt promove Speed day para apresentação de Startups</p>
+        </div>
+
+      </div>
+
+      <img src="data:image/jpeg;base64,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">
+
+      <div class="post__footer">
+        <span class="material-icons">comment</span>
+        <span class="material-icons">repeat</span>
+        <span class="material-icons">favorite_border</span>
+        <span class="material-icons">publish</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="post__avatar">
+      <img src="imagens/profile.png" alt="">
+    </div>
+    <div class="post__body">
+      <div class="post__header">
+        <div class="post__headerText">
+          <h3>Codi Academy<span class="post__headerSpecial"><span class="material-icons post__badge">verified</span>@codiacademy</span></h3>
+        </div>
+
+        <div class="post__headerDescription">
+          <p>Fundo Vermelho</p>
+        </div>
+
+      </div>
+
+      <img src="imagens/download.png">
+
+      <div class="post__footer">
+        <span class="material-icons">comment</span>
+        <span class="material-icons">repeat</span>
+        <span class="material-icons">favorite_border</span>
+        <span class="material-icons">publish</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="widgets">
+  <div class="widgets__input">
+    <span class="material-icons widgets__searchIcon">search</span>
+    <input type="text" placeholder="Buscar no Twitter">
+  </div>
+
+  <div class="widgets__widgetTrending">
+    <h2>Assuntos do Momento</h2>
+    <div class="trending">#CodiAcademy</div>
+    <div class="trending">#CodiAcademy</div>
+    <div class="trending">#CodiAcademy</div>
+    <div class="trending">#CodiAcademy</div>
+    <div class="trending">#CodiAcademy</div>
+    <div class="trending">#CodiAcademy</div>
+    <div class="trending">#CodiAcademy</div>
+    <div class="trending">#CodiAcademy</div>
+    <div class="trending">#CodiAcademy</div>
+    <div class="trending">#CodiAcademy</div>
+  </div>
+</div>
+
+  </body>
+</html>
